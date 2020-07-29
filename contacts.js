@@ -142,19 +142,19 @@ function builtContactsList() {
                 }
                  
             })
-            let term = searchField.value
-            if( resp.data[contact].name = term) {
+            // let term = searchField.value
+            // if( resp.data[contact].name = term) {
 
-                axios({
-                    method: 'put',
-                    url: urlBase,          // On récupère l'url json
-                    data: {
-                        "name" : term,   // On récupère les données renseignée dans le champ
-                        "search" : 'true'      // On renseigne un paramètre supplémentaire
-                        }
-                    })
+            //     axios({
+            //         method: 'put',
+            //         url: urlBase,          // On récupère l'url json
+            //         data: {
+            //             "name" : term,   // On récupère les données renseignée dans le champ
+            //             "search" : 'true'      // On renseigne un paramètre supplémentaire
+            //             }
+            //         })
 
-            }
+            // }
             btnSearch.addEventListener('click', function(e) {
                 console.log(e.target)  
 
