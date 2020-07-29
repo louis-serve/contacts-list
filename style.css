@@ -1,0 +1,111 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
+}
+
+.form {
+  background-color: white;
+}
+
+.form__col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form input, .form button {
+  width: 100%;
+}
+
+.contacts {
+  padding-bottom: 8rem;
+}
+
+.contacts li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .contacts li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1.5fr 2fr .5fr;
+        grid-template-columns: 1fr 1fr 1.5fr 2fr .5fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .contacts {
+    padding-bottom: 6rem;
+  }
+}
+
+aside {
+  background: whitesmoke;
+  padding: 2rem;
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  bottom: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+aside input {
+  width: 80% !important;
+}
+
+.inactive {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.fixed:after {
+  content: '';
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+}
+/*# sourceMappingURL=style.css.map */

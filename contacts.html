@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnet d'adresses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+</head>
+<body>
+    <main class="wrapper">
+        <section class="form container">
+            <h2>Nouveau contact</h2>
+            <div class="form__col">
+                <input type="hidden">
+                <input type="text" class="form-control" name="firstname" placeholder="Prénom">
+                <input type="text" class="form-control" name="name" placeholder="Nom">
+                <input type="text" class="form-control" name="phone" placeholder="+99 999 99 99 99">
+                <input type="text" class="form-control" name="email" placeholder="email@email.com">
+                <input type="text" class="form-control" name="adress" placeholder="Rue, n°">
+                <input type="text" class="form-control" name="zipcode" placeholder="9999">
+                <input type="text" class="form-control" name="city" placeholder="Ville">    
+            <button class="btn btn-primary add-contact">Ajouter</button>    
+            </div>
+        </section>
+        <section class="contacts container">
+            <h2>Liste des contacts</h2>
+            <ul class="contacts__list list-group">
+            </ul>
+        </section>
+    </main>
+    <aside class="search-bar form-inline">
+        <input type="text" class="form-control" name="search">
+        <button class="btn-info btn search-contact">Rechercher</button>
+    </aside>
+    <script defer src="../contacts.js"></script>
+</body>
+</html>
