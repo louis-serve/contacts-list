@@ -51,20 +51,20 @@ aside {
 .inactive {
     display: none;
 }
-.fixed {
-    position: fixed;
-    top:0;
-    z-index: 10;
-    //position: relative;
-    &:after {
-        content:'';
-        display: block;
-        background-color: rgba(255,255,255,.8);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: -10;
-    }
-}
+// .fixed {
+//     position: fixed;
+//     top:0;
+//     z-index: 10;
+//     //position: relative;
+//     &:after {
+//         content:'';
+//         display: block;
+//         background-color: rgba(255,255,255,.8);
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100vw;
+//         height: 100vh;
+//         z-index: -10;
+//     }
+// }
