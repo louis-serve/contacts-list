@@ -68,13 +68,14 @@ function builtContactsList() {
             document.querySelector('.list-group').appendChild(li)
 
             li.lastChild.addEventListener('click', function(e) {
-
                 let fields = document.querySelectorAll('input')
                 let contactKey = e.target.dataset.key
                 let hiddenField = document.querySelector('input[type=hidden]')
                 hiddenField.setAttribute('id', contactKey )
                 console.log(contactKey)
                 console.log(hiddenField)
+
+                window.scrollTo(0, 0);
 
                 fields.forEach(function(field){
                     
@@ -90,7 +91,8 @@ function builtContactsList() {
                 if( document.querySelector('.delete-contact') == null) {
 
                     btnAdd.classList.add('inactive')
-                    contactForm.classList.toggle('fixed')
+                    //contactForm.classList.toggle('fixed')
+                    
                     let btnDelete = document.createElement('button')
                     let btnCancel = document.createElement('button')
                     //let btnSave = document.querySelector('.add-contact')
